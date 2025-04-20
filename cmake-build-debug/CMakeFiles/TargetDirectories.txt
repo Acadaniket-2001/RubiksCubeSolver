@@ -1,0 +1,3 @@
+C:/1_My_Data/CP_codes/RubiksCubeSolver/cmake-build-debug/CMakeFiles/RubiksCubeSolver.dir
+C:/1_My_Data/CP_codes/RubiksCubeSolver/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/1_My_Data/CP_codes/RubiksCubeSolver/cmake-build-debug/CMakeFiles/rebuild_cache.dir
