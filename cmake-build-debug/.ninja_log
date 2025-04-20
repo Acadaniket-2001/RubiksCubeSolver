@@ -1,0 +1,5 @@
+# ninja log v6
+6	817	7668726763064028	CMakeFiles/RubiksCubeSolver.dir/main.cpp.obj	bbc10079d0990608
+21	3208	7668778328145452	CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.obj	8adb215d4acf02e6
+9	3249	7668778328025088	CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj	1550e610324857c8
+3249	3418	7668778360428266	RubiksCubeSolver.exe	37f7eda4a1f9f6b8
