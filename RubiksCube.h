@@ -1,5 +1,5 @@
 //
-// Created by KIIT on 20-04-2025.
+// Created by Aniket Gupta on 20-04-2025.
 //
 
 
@@ -42,6 +42,20 @@ public:
     };
 
 
+    virtual COLOR getColor(FACE face, unsigned row, unsigned col) const = 0;
+
+    static char getColorLetter(COLOR color);
+
+    void print() const;
+
+
+    virtual bool isSolved() = 0;
+
+
+    void move(MOVE mv);
+    void revertMove(MOVE mv);
+
+
     virtual RubiksCube& u() = 0;
     virtual RubiksCube& uPrime() = 0;
     virtual RubiksCube& u2() = 0;
@@ -66,24 +80,7 @@ public:
     virtual RubiksCube& dPrime() = 0;
     virtual RubiksCube& d2() = 0;
 
-    static char getColorLetter(COLOR color) {
-        switch (color) {
-            case COLOR::WHITE:  return 'W'; break;
-            case COLOR::GREEN:  return 'G'; break;
-            case COLOR::RED:  return 'R'; break;
-            case COLOR::BLUE:  return 'B'; break;
-            case COLOR::ORANGE:  return 'O'; break;
-            default:  return 'Y';
-        }
-    };
-
-    virtual COLOR getColor(FACE face, unsigned row, unsigned col) = 0;
-    void print() const;
-
-    vector<MOVE> randomShuffleCube(unsigned int times);
-
-    virtual bool isSolved() = 0;
+    // vector<MOVE> randomShuffleCube(unsigned int times);
 };
-
 
 #endif //RUBIKSCUBE_H

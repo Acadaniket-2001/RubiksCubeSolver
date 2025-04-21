@@ -32,7 +32,7 @@ public:
         }
     };
 
-    COLOR getColor(FACE face, unsigned row, unsigned col) override {
+    COLOR getColor(FACE face, unsigned row, unsigned col) const override {
         char ch = cube[int(face)][row][col];
 
         if (ch == 'W')    return COLOR::WHITE;
@@ -48,7 +48,7 @@ public:
         for(int face =0 ; face < 6 ; face++) {
             for(int row =0 ; row < 3 ; row++) {
                 for(int col =0 ; col < 3 ; col++) {
-                    ok &= this->cube[face][row][col] == getColorLetter(COLOR(face));
+                    ok &= cube[face][row][col] == getColorLetter(COLOR(face));
                 }
             }
         }
