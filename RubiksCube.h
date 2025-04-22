@@ -52,8 +52,8 @@ public:
     virtual bool isSolved() = 0;
 
 
-    void move(MOVE mv);
-    void revertMove(MOVE mv);
+    RubiksCube& move(MOVE mv);
+    RubiksCube& revertMove(MOVE mv);
 
 
     virtual RubiksCube& u() = 0;

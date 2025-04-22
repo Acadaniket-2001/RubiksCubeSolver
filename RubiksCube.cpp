@@ -21,7 +21,7 @@ char RubiksCube::getColorLetter(COLOR color) {
     }
 };
 
-void RubiksCube::move(const RubiksCube::MOVE mv) {
+RubiksCube& RubiksCube::move(const RubiksCube::MOVE mv) {
     switch (mv) {
         case RubiksCube::MOVE::L:
             this -> l(); break;
@@ -65,9 +65,10 @@ void RubiksCube::move(const RubiksCube::MOVE mv) {
         case RubiksCube::MOVE::B2:
             this ->b2(); break;
     }
+    return *this;
 }
 
-void RubiksCube::revertMove(const RubiksCube::MOVE mv) {
+RubiksCube& RubiksCube::revertMove(const RubiksCube::MOVE mv) {
     switch (mv) {
         case RubiksCube::MOVE::L:
             this -> lPrime(); break;
@@ -111,6 +112,7 @@ void RubiksCube::revertMove(const RubiksCube::MOVE mv) {
         case RubiksCube::MOVE::B2:
             this ->b2(); break;
     }
+    return *this;
 }
 
 void RubiksCube::print() const {
