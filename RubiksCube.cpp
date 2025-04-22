@@ -19,7 +19,35 @@ char RubiksCube::getColorLetter(COLOR color) {
         default:
             return 'Y';
     }
-};
+}
+
+string RubiksCube::getMove(RubiksCube::MOVE mv) {
+    switch (mv) {
+        case RubiksCube::MOVE::L: return "L";
+        case RubiksCube::MOVE::LPRIME: return "L'";
+        case RubiksCube::MOVE::L2: return "L2";
+
+        case RubiksCube::MOVE::R: return "R";
+        case RubiksCube::MOVE::RPRIME: return "R'";
+        case RubiksCube::MOVE::R2: return "R2";
+
+        case RubiksCube::MOVE::U: return "U";
+        case RubiksCube::MOVE::UPRIME: return "U'";
+        case RubiksCube::MOVE::U2: return "U2";
+
+        case RubiksCube::MOVE::D: return "D";
+        case RubiksCube::MOVE::DPRIME: return "D'";
+        case RubiksCube::MOVE::D2: return "D2";
+
+        case RubiksCube::MOVE::F: return "F";
+        case RubiksCube::MOVE::FPRIME: return "F'";
+        case RubiksCube::MOVE::F2: return "F2";
+
+        case RubiksCube::MOVE::B: return "B";
+        case RubiksCube::MOVE::BPRIME: return "B'";
+        case RubiksCube::MOVE::B2: return "B2";
+    }
+}
 
 RubiksCube& RubiksCube::move(const RubiksCube::MOVE mv) {
     switch (mv) {
@@ -114,6 +142,22 @@ RubiksCube& RubiksCube::revertMove(const RubiksCube::MOVE mv) {
     }
     return *this;
 }
+
+
+vector<RubiksCube::MOVE> RubiksCube::randomShuffleCube(unsigned int times) {
+
+    srand(time(0));
+
+    vector<RubiksCube::MOVE> moves;
+    for (unsigned int i = 0; i < times; i++) {
+        int idx = rand() % 18;
+        moves.push_back(static_cast<RubiksCube::MOVE>(idx));
+        this->move(RubiksCube::MOVE(idx));
+    }
+
+    return moves;
+}
+
 
 void RubiksCube::print() const {
     cout << "RUBIK's CUBE:\n\n";

@@ -43,10 +43,9 @@ public:
 
 
     virtual COLOR getColor(FACE face, unsigned row, unsigned col) const = 0;
-
     static char getColorLetter(COLOR color);
-
     void print() const;
+    string getMove(RubiksCube::MOVE mv);
 
 
     virtual bool isSolved() = 0;
@@ -54,6 +53,7 @@ public:
 
     RubiksCube& move(MOVE mv);
     RubiksCube& revertMove(MOVE mv);
+    vector<MOVE> randomShuffleCube(unsigned int times);
 
 
     virtual RubiksCube& u() = 0;
@@ -80,7 +80,6 @@ public:
     virtual RubiksCube& dPrime() = 0;
     virtual RubiksCube& d2() = 0;
 
-    // vector<MOVE> randomShuffleCube(unsigned int times);
 };
 
 #endif //RUBIKSCUBE_H
