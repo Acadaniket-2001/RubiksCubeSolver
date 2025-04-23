@@ -1,5 +1,5 @@
 //
-// Created by KIIT on 23-04-2025.
+// Created by Aniket Gupta on 23-04-2025.
 //
 
 #ifndef BFSSOLVER_H

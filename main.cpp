@@ -5,6 +5,7 @@
 
 #include <bits/stdc++.h>
 
+#include "IDDFSSolver.h"
 #include "BFSSolver.h"
 #include "DFSSolver.h"
 #include "RubiksCube3dArray.cpp"
@@ -43,6 +44,23 @@ int main () {
 
 
 
+
+    // // Testing IDDFSSolver: ----------------------------------------------------------------------------------------------
+    //
+    // RubiksCubeBitboard obj;
+    // obj.print();
+    //
+    // vector<RubiksCubeBitboard::MOVE> steps = obj.randomShuffleCube(6);
+    // for (auto e: steps)    cout << obj.getMove(e) << " ";
+    // cout << endl;
+    // obj.print();
+    //
+    // IDDFSSolver<RubiksCubeBitboard, HashBitboard> solver(obj);
+    // vector<RubiksCubeBitboard::MOVE> moves = solver.solve();
+    //
+    // for (const auto e: moves)    cout << obj.getMove(e) << " ";
+    // cout << endl;
+    // obj.print();
 
 
 
