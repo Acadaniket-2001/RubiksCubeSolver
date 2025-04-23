@@ -144,6 +144,7 @@ public:
          *moves the colors to cell[0, 7, 6] in face=2 from cell[0, 7, 6] in face=0
          */
         this->rotateSide(2, 0, 7, 6, 0, 0, 7, 6);
+
         this->rotateSide(0, 0, 7, 6, 4, 4, 3, 2);
         this->rotateSide(4, 4, 3, 2, 5, 0, 7, 6);
 
@@ -302,5 +303,41 @@ public:
         this->d();
 
         return *this;
+    }
+
+
+    /**
+     * Helper functions to create unordered_map<RubiksCube, bool>
+     */
+    bool operator== (const RubiksCubeBitboard& c1) const {
+        for (int face = 0; face < 6; face++) {
+            for (int row = 0; row < 3; row++) {
+                for (int col = 0; col < 3; col++) {
+                    if (getColor(FACE(face), row, col) != c1.getColor(FACE(face), row, col)) return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    RubiksCubeBitboard& operator= (const RubiksCubeBitboard &c1) {
+        for (int face = 0; face < 6; face++) {
+            bitboard[face] = c1.bitboard[face];
+        }
+        return *this;
+    }
+};
+
+
+struct HashBitboard {
+
+    size_t operator() (const RubiksCubeBitboard& c1) const {
+        uint64_t hsh = 0ULL;
+
+        for (int face = 0; face < 6; face++) {
+            hsh ^= c1.bitboard[face];          // using XOR-hash
+        }
+
+        return hsh;
     }
 };

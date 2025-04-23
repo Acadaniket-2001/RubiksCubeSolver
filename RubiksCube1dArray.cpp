@@ -226,5 +226,60 @@ public:
 
         return *this;
     }
+
+
+    /**
+     * Helper functions to create unordered_map<RubiksCube, bool>
+     */
+    bool operator== (const RubiksCube1dArray& c1) const {
+        for (int face = 0; face < 6; face++) {
+            for (int row = 0; row < 3; row++) {
+                for (int col = 0; col < 3; col++) {
+                    if (getColor(FACE(face), row, col) != c1.getColor(FACE(face), row, col)) return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    RubiksCube1dArray& operator= (const RubiksCube1dArray &c1) {
+        for (int face = 0; face < 6; face++) {
+            for (int row = 0; row < 3; row++) {
+                for (int col = 0; col < 3; col++) {
+                    cube[getIndex(int(face), row, col)] = c1.cube[getIndex(int(face), row, col)];
+                }
+            }
+        }
+        return *this;
+    }
 };
+
+struct Hash1d {
+
+    size_t operator() (const RubiksCube1dArray& c1) const {
+        string res = "";
+
+        for (int i = 0; i < 54; i++) {
+            res.push_back(c1.cube[i]);
+        }
+
+        return hash<string>()(res);
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

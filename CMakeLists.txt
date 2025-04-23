@@ -9,4 +9,5 @@ add_executable(RubiksCubeSolver main.cpp
         RubiksCube3dArray.cpp
         RubiksCube1dArray.cpp
         RubiksCubeBitboard.cpp
+        DFSSolver.h
 )

@@ -80,6 +80,8 @@ public:
     virtual RubiksCube& dPrime() = 0;
     virtual RubiksCube& d2() = 0;
 
+    // virtual bool operator== (const RubiksCube& c1, const RubiksCube& c2) = 0;
+    // virtual RubiksCube& operator= (const RubiksCube& c1);         // since th @ param obj. are passe by reference so the member variables like cube[] are no accessible for param obj.: soln. directly add the function to derived class as new function and not overrided functions
 };
 
 #endif //RUBIKSCUBE_H

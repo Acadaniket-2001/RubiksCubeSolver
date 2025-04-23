@@ -4,6 +4,8 @@
 
 
 #include <bits/stdc++.h>
+
+#include "DFSSolver.h"
 #include "RubiksCube3dArray.cpp"
 #include "RubiksCube1dArray.cpp"
 #include "RubiksCubeBitboard.cpp"
@@ -12,15 +14,6 @@ using namespace std;
 
 int main () {
 
-    RubiksCubeBitboard obj;
-    vector<RubiksCubeBitboard::MOVE> moves = obj.randomShuffleCube(10);
-
-    for (auto e : moves) {
-        cout << obj.getMove(e) << " ";
-    }
-
-    cout << endl;
-    obj.print();
 
 
 
@@ -41,11 +34,76 @@ int main () {
 
 
 
+    // Testing DFSSolver: ----------------------------------------------------------------------------------------------
+
+    // /*
+    //  * Solves within feasible time for upto depth 6
+    //  */
+    //
+    // RubiksCubeBitboard obj;
+    // obj.print();
+    //
+    // vector<RubiksCubeBitboard::MOVE> steps = obj.randomShuffleCube(6);
+    // for (auto e: steps)    cout << obj.getMove(e) << " ";
+    // cout << endl;
+    // obj.print();
+    //
+    // DFSSolver<RubiksCubeBitboard, Hash3d> solver(obj, 8);
+    // vector<RubiksCubeBitboard::MOVE> moves = solver.solve();
+    //
+    // for (const auto e: moves)    cout << obj.getMove(e) << " ";
+    // cout << endl;
+    // obj.print();
 
 
 
 
+    // Testing custom Hashes for the RubiksCubeSolver ------------------------------------------------------------------
 
+    // unordered_map<RubiksCube3dArray, int, Hash3d> mp;
+    // RubiksCube3dArray obj1;
+    // obj1.l();
+    // mp[obj1] = 200;
+    // if (mp[obj1])   cout << "3D Cube found\n";
+    //
+    // obj1.u();
+    // mp[obj1] = 1000;
+    // if (mp[obj1])   cout << "3D Cube found\n";
+    //
+    //
+    // unordered_map<RubiksCube1dArray, int, Hash1d> m2;
+    // RubiksCube1dArray obj2;
+    // obj2.l();
+    // m2[obj2] = 200;
+    // if (m2[obj2])   cout << "1D Cube found\n";
+    //
+    // obj2.u();
+    // m2[obj2] = 1000;
+    // if (m2[obj2])   cout << "1D Cube found\n";
+    //
+    //
+    // unordered_map<RubiksCubeBitboard, int, HashBitboard> m3;
+    // RubiksCubeBitboard obj3;
+    // obj3.l();
+    // m3[obj3] = 200;
+    // if (m3[obj3])   cout << "BitCube found\n";
+    //
+    // obj2.u();
+    // m3[obj3] = 1000;
+    // if (m3[obj3])   cout << "BitCube found\n";
+
+
+
+
+    // Testing randomShuffleCube() -------------------------------------------------------------------------------------
+
+    // RubiksCubeBitboard obj;
+    // vector<RubiksCubeBitboard::MOVE> moves = obj.randomShuffleCube(10);
+    // for (auto e : moves) {
+    //     cout << obj.getMove(e) << " ";
+    // }
+    // cout << endl;
+    // obj.print();
 
 
     // Testing BIT-MODEL -----------------------------------------------------------------------------------------------
