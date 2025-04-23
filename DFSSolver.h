@@ -24,15 +24,13 @@ public:
 
 private:
     T &rubik_;
-
     int max_search_depth_;
+    vector<typename T::MOVE> moves_;
 
     /**
      * visited map is removed to ensure that we always find the solution, @ the cost of more time
      **/
     // unordered_map<T, bool, X> visited_;
-    vector<typename T::MOVE> moves_;
-
     void rec(int rem_depth) {
         if (rem_depth == 0 || rubik_.isSolved()) return;
 

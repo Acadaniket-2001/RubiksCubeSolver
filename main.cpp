@@ -5,6 +5,7 @@
 
 #include <bits/stdc++.h>
 
+#include "BFSSolver.h"
 #include "DFSSolver.h"
 #include "RubiksCube3dArray.cpp"
 #include "RubiksCube1dArray.cpp"
@@ -34,12 +35,50 @@ int main () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     // Testing DFSSolver: ----------------------------------------------------------------------------------------------
 
-    // /*
-    //  * Solves within feasible time for upto depth 6
-    //  */
+    /*
+     * Solves within feasible time for upto depth:
+     * 6 - In 3d/1d form
+     * 7 - In BitBoard form
+     */
+
+    // RubiksCubeBitboard obj;
+    // obj.print();
     //
+    // vector<RubiksCubeBitboard::MOVE> steps = obj.randomShuffleCube(7);
+    // for (auto e: steps)    cout << obj.getMove(e) << " ";
+    // cout << endl;
+    // obj.print();
+    //
+    // BFSSolver<RubiksCubeBitboard, HashBitboard> solver(obj);
+    // vector<RubiksCubeBitboard::MOVE> moves = solver.solve();
+    //
+    // for (const auto e: moves)    cout << obj.getMove(e) << " ";
+    // cout << endl;
+    // obj.print();
+
+
+
+
+    // Testing DFSSolver: ----------------------------------------------------------------------------------------------
+
+    /*
+     * Solves within feasible time for upto depth 6
+     */
+
     // RubiksCubeBitboard obj;
     // obj.print();
     //

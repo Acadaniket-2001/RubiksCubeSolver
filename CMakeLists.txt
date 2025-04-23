@@ -10,4 +10,5 @@ add_executable(RubiksCubeSolver main.cpp
         RubiksCube1dArray.cpp
         RubiksCubeBitboard.cpp
         DFSSolver.h
+        BFSSolver.h
 )
