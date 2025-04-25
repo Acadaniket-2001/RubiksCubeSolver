@@ -4,8 +4,6 @@
 
 #include "PatternDatabase.h"
 
-const string filePath = "../Databases/CornerDB.txt";
-
 PatternDatabase::PatternDatabase(const size_t size) :
     database(size, 0xFF), size(size), numItems(0) {}
 

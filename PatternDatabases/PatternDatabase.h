@@ -5,8 +5,8 @@
 #ifndef PATTERNDATABASE_H
 #define PATTERNDATABASE_H
 
-#include "../RubiksCube.h"
 #include "NibbleArray.h"
+#include "../RubiksCube.h"
 #include "bits/stdc++.h"
 
 using namespace std;
