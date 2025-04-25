@@ -13,7 +13,7 @@ using namespace std;
 template<typename T, typename X>
 class IDDFSSolver {
 public:
-    IDDFSSolver(T &rubik, int max_search_depth = 8) :
+    IDDFSSolver(T &rubik, int max_search_depth = 7) :
         rubik_(rubik), max_search_depth_(max_search_depth) {};
 
     vector<typename T::MOVE> solve() {
