@@ -26,10 +26,8 @@ public:
 private:
     T& rubik_;
     int cur_max_depth_ = 1, next_depth_ = 100;
-
     vector<typename T::MOVE> moves_;
     unordered_map<T, typename T::MOVE, X> parent_move_;
-
     struct Node {
         T cube;
         int gn, hn;

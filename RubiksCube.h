@@ -80,8 +80,20 @@ public:
     virtual RubiksCube& dPrime() = 0;
     virtual RubiksCube& d2() = 0;
 
+
     // virtual bool operator== (const RubiksCube& c1, const RubiksCube& c2) = 0;
-    // virtual RubiksCube& operator= (const RubiksCube& c1);         // since th @ param obj. are passe by reference so the member variables like cube[] are no accessible for param obj.: soln. directly add the function to derived class as new function and not overrided functions
+    // virtual RubiksCube& operator= (const RubiksCube& c1);         // since the @param obj. are passe by reference so the member variables like cube[] are not accessible for param obj.: soln. directly add the function to derived class as new function and not overrided functions
+
+
+    /*
+     * Helper functions for Pattern DB
+     */
+    string getCornerColorString(uint8_t ind);
+
+    uint8_t getCornerIndex(uint8_t ind);
+
+    uint8_t getCornerOrientation(uint8_t ind);
+
 };
 
 #endif //RUBIKSCUBE_H

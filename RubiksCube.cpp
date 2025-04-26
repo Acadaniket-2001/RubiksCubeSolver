@@ -198,3 +198,84 @@ void RubiksCube::print() const {
     cout << "\n";
 
 }
+
+
+string RubiksCube::getCornerColorString(uint8_t ind) {
+    string res = "";
+    switch (ind) {
+        case 0:
+            res.push_back(getColorLetter(getColor(FACE::UP, 2, 0)));
+            res.push_back(getColorLetter(getColor(FACE::LEFT, 0, 2)));
+            res.push_back(getColorLetter(getColor(FACE::FRONT, 0, 0)));
+            break;
+
+        case 1:
+            res.push_back(getColorLetter(getColor(FACE::UP, 2, 2)));
+            res.push_back(getColorLetter(getColor(FACE::RIGHT, 0, 0)));
+            res.push_back(getColorLetter(getColor(FACE::FRONT, 0, 2)));
+            break;
+
+        case 2:
+            res.push_back(getColorLetter(getColor(FACE::UP, 0, 2)));
+            res.push_back(getColorLetter(getColor(FACE::RIGHT, 0, 2)));
+            res.push_back(getColorLetter(getColor(FACE::BACK, 0, 0)));
+            break;
+
+        case 3:
+            res.push_back(getColorLetter(getColor(FACE::UP, 0, 0)));
+            res.push_back(getColorLetter(getColor(FACE::LEFT, 0, 0)));
+            res.push_back(getColorLetter(getColor(FACE::BACK, 0, 2)));
+            break;
+
+        case 4:
+            res.push_back(getColorLetter(getColor(FACE::DOWN, 0, 0)));
+            res.push_back(getColorLetter(getColor(FACE::LEFT, 2, 2)));
+            res.push_back(getColorLetter(getColor(FACE::FRONT, 2, 0)));
+            break;
+
+        case 5:
+            res.push_back(getColorLetter(getColor(FACE::DOWN, 0, 2)));
+            res.push_back(getColorLetter(getColor(FACE::RIGHT, 2, 0)));
+            res.push_back(getColorLetter(getColor(FACE::FRONT, 2, 2)));
+            break;
+
+        case 6:
+            res.push_back(getColorLetter(getColor(FACE::DOWN, 2, 2)));
+            res.push_back(getColorLetter(getColor(FACE::RIGHT, 2, 2)));
+            res.push_back(getColorLetter(getColor(FACE::BACK, 2, 0)));
+            break;
+
+        case 7:
+            res.push_back(getColorLetter(getColor(FACE::DOWN, 2, 0)));
+            res.push_back(getColorLetter(getColor(FACE::LEFT, 2, 0)));
+            res.push_back(getColorLetter(getColor(FACE::BACK, 2, 2)));
+            break;
+        default: ;
+    }
+    return res;
+}
+
+uint8_t RubiksCube::getCornerIndex(uint8_t ind) {
+    string str = getCornerColorString(ind);
+
+    if (str == "WGR" || str == "GRW" || str == "RWG")   return 0;
+    else if (str == "WBR" || str == "BRW" || str == "RWB")   return 1;
+    else if (str == "WBO" || str == "BOW" || str == "OWB")   return 2;
+    else if (str == "WGO" || str == "GOW" || str == "OWG")   return 3;
+    else if (str == "YGR" || str == "GRY" || str == "RYG")   return 4;
+    else if (str == "YBR" || str == "BRY" || str == "RYB")   return 5;
+    else if (str == "YBO" || str == "BOY" || str == "OYB")   return 6;
+    else // if (str == "YGO" || str == "GOY" || str == "OYG")
+        return 7;
+}
+
+uint8_t RubiksCube::getCornerOrientation(uint8_t ind) {
+    string str = getCornerColorString(ind);
+
+    if (str[0] == 'W' || str[0] == 'Y') return 0;
+    else if (str[0] == 'B' || str[0] == 'G') return 1;
+    else // if (str[0] == 'R' || str[0] == 'O')
+        return 2;
+}
+
+

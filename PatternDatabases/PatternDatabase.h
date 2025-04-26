@@ -23,15 +23,15 @@ public:
     PatternDatabase(const size_t size, uint8_t init_val);
 
 
-    virtual uint32_t getDatabaseIndex(const RubiksCube &cube) const = 0;
+    virtual uint32_t getDatabaseIndex(RubiksCube &cube) const = 0;
 
 
-    virtual bool setHeuristic(const RubiksCube &cube, const uint8_t numMoves);
+    virtual bool setHeuristic(RubiksCube &cube, uint8_t numMoves);
 
     virtual bool setHeuristic(const uint32_t ind, const uint8_t numMoves);
 
 
-    virtual uint8_t getHeuristic(const RubiksCube &cube) const;
+    virtual uint8_t getHeuristic(RubiksCube &cube) const;
 
     virtual uint8_t getHeuristic(const uint32_t ind) const;
 

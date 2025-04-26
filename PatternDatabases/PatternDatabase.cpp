@@ -24,7 +24,7 @@ bool PatternDatabase::setHeuristic(const uint32_t ind, const uint8_t numMoves) {
     return false;
 }
 
-bool PatternDatabase::setHeuristic(const RubiksCube &cube, const uint8_t numMoves) {
+bool PatternDatabase::setHeuristic(RubiksCube &cube, const uint8_t numMoves) {
     return setHeuristic(getDatabaseIndex(cube), numMoves);
 }
 
@@ -32,7 +32,7 @@ uint8_t PatternDatabase::getHeuristic(const uint32_t ind) const {
     return database.getVal(ind);
 }
 
-uint8_t PatternDatabase::getHeuristic(const RubiksCube &cube) const {
+uint8_t PatternDatabase::getHeuristic(RubiksCube &cube) const {
     return getHeuristic(getDatabaseIndex(cube));
 }
 
