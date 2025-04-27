@@ -135,6 +135,102 @@ RubiksCubeSolver/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/build
 .PHONY : RubiksCubeSolver/fast
 
+Models/RubiksCube.obj: Models/RubiksCube.cpp.obj
+.PHONY : Models/RubiksCube.obj
+
+# target to build an object file
+Models/RubiksCube.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.obj
+.PHONY : Models/RubiksCube.cpp.obj
+
+Models/RubiksCube.i: Models/RubiksCube.cpp.i
+.PHONY : Models/RubiksCube.i
+
+# target to preprocess a source file
+Models/RubiksCube.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.i
+.PHONY : Models/RubiksCube.cpp.i
+
+Models/RubiksCube.s: Models/RubiksCube.cpp.s
+.PHONY : Models/RubiksCube.s
+
+# target to generate assembly for a file
+Models/RubiksCube.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.s
+.PHONY : Models/RubiksCube.cpp.s
+
+Models/RubiksCube1dArray.obj: Models/RubiksCube1dArray.cpp.obj
+.PHONY : Models/RubiksCube1dArray.obj
+
+# target to build an object file
+Models/RubiksCube1dArray.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.obj
+.PHONY : Models/RubiksCube1dArray.cpp.obj
+
+Models/RubiksCube1dArray.i: Models/RubiksCube1dArray.cpp.i
+.PHONY : Models/RubiksCube1dArray.i
+
+# target to preprocess a source file
+Models/RubiksCube1dArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.i
+.PHONY : Models/RubiksCube1dArray.cpp.i
+
+Models/RubiksCube1dArray.s: Models/RubiksCube1dArray.cpp.s
+.PHONY : Models/RubiksCube1dArray.s
+
+# target to generate assembly for a file
+Models/RubiksCube1dArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.s
+.PHONY : Models/RubiksCube1dArray.cpp.s
+
+Models/RubiksCube3dArray.obj: Models/RubiksCube3dArray.cpp.obj
+.PHONY : Models/RubiksCube3dArray.obj
+
+# target to build an object file
+Models/RubiksCube3dArray.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.obj
+.PHONY : Models/RubiksCube3dArray.cpp.obj
+
+Models/RubiksCube3dArray.i: Models/RubiksCube3dArray.cpp.i
+.PHONY : Models/RubiksCube3dArray.i
+
+# target to preprocess a source file
+Models/RubiksCube3dArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.i
+.PHONY : Models/RubiksCube3dArray.cpp.i
+
+Models/RubiksCube3dArray.s: Models/RubiksCube3dArray.cpp.s
+.PHONY : Models/RubiksCube3dArray.s
+
+# target to generate assembly for a file
+Models/RubiksCube3dArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.s
+.PHONY : Models/RubiksCube3dArray.cpp.s
+
+Models/RubiksCubeBitboard.obj: Models/RubiksCubeBitboard.cpp.obj
+.PHONY : Models/RubiksCubeBitboard.obj
+
+# target to build an object file
+Models/RubiksCubeBitboard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.obj
+.PHONY : Models/RubiksCubeBitboard.cpp.obj
+
+Models/RubiksCubeBitboard.i: Models/RubiksCubeBitboard.cpp.i
+.PHONY : Models/RubiksCubeBitboard.i
+
+# target to preprocess a source file
+Models/RubiksCubeBitboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.i
+.PHONY : Models/RubiksCubeBitboard.cpp.i
+
+Models/RubiksCubeBitboard.s: Models/RubiksCubeBitboard.cpp.s
+.PHONY : Models/RubiksCubeBitboard.s
+
+# target to generate assembly for a file
+Models/RubiksCubeBitboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.s
+.PHONY : Models/RubiksCubeBitboard.cpp.s
+
 PatternDatabases/CornerDBMaker.obj: PatternDatabases/CornerDBMaker.cpp.obj
 .PHONY : PatternDatabases/CornerDBMaker.obj
 
@@ -255,102 +351,6 @@ PatternDatabases/math.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/math.cpp.s
 .PHONY : PatternDatabases/math.cpp.s
 
-RubiksCube.obj: RubiksCube.cpp.obj
-.PHONY : RubiksCube.obj
-
-# target to build an object file
-RubiksCube.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj
-.PHONY : RubiksCube.cpp.obj
-
-RubiksCube.i: RubiksCube.cpp.i
-.PHONY : RubiksCube.i
-
-# target to preprocess a source file
-RubiksCube.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.i
-.PHONY : RubiksCube.cpp.i
-
-RubiksCube.s: RubiksCube.cpp.s
-.PHONY : RubiksCube.s
-
-# target to generate assembly for a file
-RubiksCube.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.s
-.PHONY : RubiksCube.cpp.s
-
-RubiksCube1dArray.obj: RubiksCube1dArray.cpp.obj
-.PHONY : RubiksCube1dArray.obj
-
-# target to build an object file
-RubiksCube1dArray.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.obj
-.PHONY : RubiksCube1dArray.cpp.obj
-
-RubiksCube1dArray.i: RubiksCube1dArray.cpp.i
-.PHONY : RubiksCube1dArray.i
-
-# target to preprocess a source file
-RubiksCube1dArray.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.i
-.PHONY : RubiksCube1dArray.cpp.i
-
-RubiksCube1dArray.s: RubiksCube1dArray.cpp.s
-.PHONY : RubiksCube1dArray.s
-
-# target to generate assembly for a file
-RubiksCube1dArray.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.s
-.PHONY : RubiksCube1dArray.cpp.s
-
-RubiksCube3dArray.obj: RubiksCube3dArray.cpp.obj
-.PHONY : RubiksCube3dArray.obj
-
-# target to build an object file
-RubiksCube3dArray.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.obj
-.PHONY : RubiksCube3dArray.cpp.obj
-
-RubiksCube3dArray.i: RubiksCube3dArray.cpp.i
-.PHONY : RubiksCube3dArray.i
-
-# target to preprocess a source file
-RubiksCube3dArray.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.i
-.PHONY : RubiksCube3dArray.cpp.i
-
-RubiksCube3dArray.s: RubiksCube3dArray.cpp.s
-.PHONY : RubiksCube3dArray.s
-
-# target to generate assembly for a file
-RubiksCube3dArray.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.s
-.PHONY : RubiksCube3dArray.cpp.s
-
-RubiksCubeBitboard.obj: RubiksCubeBitboard.cpp.obj
-.PHONY : RubiksCubeBitboard.obj
-
-# target to build an object file
-RubiksCubeBitboard.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.obj
-.PHONY : RubiksCubeBitboard.cpp.obj
-
-RubiksCubeBitboard.i: RubiksCubeBitboard.cpp.i
-.PHONY : RubiksCubeBitboard.i
-
-# target to preprocess a source file
-RubiksCubeBitboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.i
-.PHONY : RubiksCubeBitboard.cpp.i
-
-RubiksCubeBitboard.s: RubiksCubeBitboard.cpp.s
-.PHONY : RubiksCubeBitboard.s
-
-# target to generate assembly for a file
-RubiksCubeBitboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.s
-.PHONY : RubiksCubeBitboard.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -385,6 +385,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... RubiksCubeSolver
+	@echo ... Models/RubiksCube.obj
+	@echo ... Models/RubiksCube.i
+	@echo ... Models/RubiksCube.s
+	@echo ... Models/RubiksCube1dArray.obj
+	@echo ... Models/RubiksCube1dArray.i
+	@echo ... Models/RubiksCube1dArray.s
+	@echo ... Models/RubiksCube3dArray.obj
+	@echo ... Models/RubiksCube3dArray.i
+	@echo ... Models/RubiksCube3dArray.s
+	@echo ... Models/RubiksCubeBitboard.obj
+	@echo ... Models/RubiksCubeBitboard.i
+	@echo ... Models/RubiksCubeBitboard.s
 	@echo ... PatternDatabases/CornerDBMaker.obj
 	@echo ... PatternDatabases/CornerDBMaker.i
 	@echo ... PatternDatabases/CornerDBMaker.s
@@ -400,18 +412,6 @@ help:
 	@echo ... PatternDatabases/math.obj
 	@echo ... PatternDatabases/math.i
 	@echo ... PatternDatabases/math.s
-	@echo ... RubiksCube.obj
-	@echo ... RubiksCube.i
-	@echo ... RubiksCube.s
-	@echo ... RubiksCube1dArray.obj
-	@echo ... RubiksCube1dArray.i
-	@echo ... RubiksCube1dArray.s
-	@echo ... RubiksCube3dArray.obj
-	@echo ... RubiksCube3dArray.i
-	@echo ... RubiksCube3dArray.s
-	@echo ... RubiksCubeBitboard.obj
-	@echo ... RubiksCubeBitboard.i
-	@echo ... RubiksCubeBitboard.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

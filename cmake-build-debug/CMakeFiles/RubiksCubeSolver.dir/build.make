@@ -85,61 +85,61 @@ CMakeFiles/RubiksCubeSolver.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubiksCubeSolver.dir/main.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\1_My_Data\CP_codes\RubiksCubeSolver\main.cpp -o CMakeFiles\RubiksCubeSolver.dir\main.cpp.s
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/flags.make
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj: C:/1_My_Data/CP_codes/RubiksCubeSolver/RubiksCube.cpp
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\1_My_Data\CP_codes\RubiksCubeSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj -MF CMakeFiles\RubiksCubeSolver.dir\RubiksCube.cpp.obj.d -o CMakeFiles\RubiksCubeSolver.dir\RubiksCube.cpp.obj -c C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube.cpp
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/flags.make
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.obj: C:/1_My_Data/CP_codes/RubiksCubeSolver/Models/RubiksCube.cpp
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\1_My_Data\CP_codes\RubiksCubeSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.obj -MF CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube.cpp.obj.d -o CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube.cpp.obj -c C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCube.cpp
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube.cpp > CMakeFiles\RubiksCubeSolver.dir\RubiksCube.cpp.i
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCube.cpp > CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube.cpp.i
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube.cpp -o CMakeFiles\RubiksCubeSolver.dir\RubiksCube.cpp.s
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCube.cpp -o CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube.cpp.s
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/flags.make
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.obj: C:/1_My_Data/CP_codes/RubiksCubeSolver/RubiksCube3dArray.cpp
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\1_My_Data\CP_codes\RubiksCubeSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.obj -MF CMakeFiles\RubiksCubeSolver.dir\RubiksCube3dArray.cpp.obj.d -o CMakeFiles\RubiksCubeSolver.dir\RubiksCube3dArray.cpp.obj -c C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube3dArray.cpp
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/flags.make
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.obj: C:/1_My_Data/CP_codes/RubiksCubeSolver/Models/RubiksCube3dArray.cpp
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\1_My_Data\CP_codes\RubiksCubeSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.obj -MF CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube3dArray.cpp.obj.d -o CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube3dArray.cpp.obj -c C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCube3dArray.cpp
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube3dArray.cpp > CMakeFiles\RubiksCubeSolver.dir\RubiksCube3dArray.cpp.i
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCube3dArray.cpp > CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube3dArray.cpp.i
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube3dArray.cpp -o CMakeFiles\RubiksCubeSolver.dir\RubiksCube3dArray.cpp.s
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCube3dArray.cpp -o CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube3dArray.cpp.s
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/flags.make
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.obj: C:/1_My_Data/CP_codes/RubiksCubeSolver/RubiksCube1dArray.cpp
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\1_My_Data\CP_codes\RubiksCubeSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.obj -MF CMakeFiles\RubiksCubeSolver.dir\RubiksCube1dArray.cpp.obj.d -o CMakeFiles\RubiksCubeSolver.dir\RubiksCube1dArray.cpp.obj -c C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube1dArray.cpp
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/flags.make
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.obj: C:/1_My_Data/CP_codes/RubiksCubeSolver/Models/RubiksCube1dArray.cpp
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\1_My_Data\CP_codes\RubiksCubeSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.obj -MF CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube1dArray.cpp.obj.d -o CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube1dArray.cpp.obj -c C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCube1dArray.cpp
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube1dArray.cpp > CMakeFiles\RubiksCubeSolver.dir\RubiksCube1dArray.cpp.i
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCube1dArray.cpp > CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube1dArray.cpp.i
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube1dArray.cpp -o CMakeFiles\RubiksCubeSolver.dir\RubiksCube1dArray.cpp.s
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCube1dArray.cpp -o CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCube1dArray.cpp.s
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/flags.make
-CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.obj: C:/1_My_Data/CP_codes/RubiksCubeSolver/RubiksCubeBitboard.cpp
-CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\1_My_Data\CP_codes\RubiksCubeSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.obj -MF CMakeFiles\RubiksCubeSolver.dir\RubiksCubeBitboard.cpp.obj.d -o CMakeFiles\RubiksCubeSolver.dir\RubiksCubeBitboard.cpp.obj -c C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCubeBitboard.cpp
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/flags.make
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.obj: C:/1_My_Data/CP_codes/RubiksCubeSolver/Models/RubiksCubeBitboard.cpp
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\1_My_Data\CP_codes\RubiksCubeSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.obj -MF CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCubeBitboard.cpp.obj.d -o CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCubeBitboard.cpp.obj -c C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCubeBitboard.cpp
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCubeBitboard.cpp > CMakeFiles\RubiksCubeSolver.dir\RubiksCubeBitboard.cpp.i
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCubeBitboard.cpp > CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCubeBitboard.cpp.i
 
-CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCubeBitboard.cpp -o CMakeFiles\RubiksCubeSolver.dir\RubiksCubeBitboard.cpp.s
+CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\1_My_Data\CP_codes\RubiksCubeSolver\Models\RubiksCubeBitboard.cpp -o CMakeFiles\RubiksCubeSolver.dir\Models\RubiksCubeBitboard.cpp.s
 
 CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/NibbleArray.cpp.obj: CMakeFiles/RubiksCubeSolver.dir/flags.make
 CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/NibbleArray.cpp.obj: C:/1_My_Data/CP_codes/RubiksCubeSolver/PatternDatabases/NibbleArray.cpp
@@ -214,10 +214,10 @@ CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/CornerDBMaker.cpp.s: cmake_forc
 # Object files for target RubiksCubeSolver
 RubiksCubeSolver_OBJECTS = \
 "CMakeFiles/RubiksCubeSolver.dir/main.cpp.obj" \
-"CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj" \
-"CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.obj" \
-"CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.obj" \
-"CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.obj" \
+"CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.obj" \
+"CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.obj" \
+"CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.obj" \
+"CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.obj" \
 "CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/NibbleArray.cpp.obj" \
 "CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/PatternDatabase.cpp.obj" \
 "CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/math.cpp.obj" \
@@ -228,10 +228,10 @@ RubiksCubeSolver_OBJECTS = \
 RubiksCubeSolver_EXTERNAL_OBJECTS =
 
 RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/main.cpp.obj
-RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/RubiksCube.cpp.obj
-RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/RubiksCube3dArray.cpp.obj
-RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/RubiksCube1dArray.cpp.obj
-RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/RubiksCubeBitboard.cpp.obj
+RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.obj
+RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube3dArray.cpp.obj
+RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.obj
+RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCubeBitboard.cpp.obj
 RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/NibbleArray.cpp.obj
 RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/PatternDatabase.cpp.obj
 RubiksCubeSolver.exe: CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/math.cpp.obj

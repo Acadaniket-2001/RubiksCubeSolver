@@ -339,6 +339,6 @@ CMakeFiles/RubiksCubeSolver.dir/PatternDatabases/CornerPatternDatabase.cpp.obj: 
  C:/Program\ Files/JetBrains/CLion\ 2025.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
  C:/Program\ Files/JetBrains/CLion\ 2025.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
  C:/Program\ Files/JetBrains/CLion\ 2025.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory_resource \
- C:/1_My_Data/CP_codes/RubiksCubeSolver/RubiksCube.h \
+ C:/1_My_Data/CP_codes/RubiksCubeSolver/Models/RubiksCube.h \
  C:\1_My_Data\CP_codes\RubiksCubeSolver\PatternDatabases\PermutationIndexer.h \
  C:\1_My_Data\CP_codes\RubiksCubeSolver\PatternDatabases\math.h

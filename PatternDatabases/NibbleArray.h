@@ -33,6 +33,9 @@ public:
     void reset(const uint8_t val = 0xFF);
 
 private:
+    /**
+     * # of entries possible in the Nibble Array
+     */
     size_t size_;
     vector<uint8_t> arr_;
 };

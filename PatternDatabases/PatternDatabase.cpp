@@ -15,10 +15,10 @@ PatternDatabase::PatternDatabase(const size_t size, uint8_t init_val) :
 bool PatternDatabase::setHeuristic(const uint32_t ind, const uint8_t numMoves) {
     uint8_t oldNumMoves = getHeuristic(ind);
 
-    if (oldNumMoves == 0xF) numItems++;      // 0XF = (0000 1111) = 15
+    if (oldNumMoves == 0xF) numItems++;      // 0xF = (0000 1111) = 15
 
     if (oldNumMoves > numMoves) {
-        database.setVal(ind, oldNumMoves);
+        database.setVal(ind, numMoves);
         return true;
     }
     return false;
@@ -63,7 +63,7 @@ void PatternDatabase::toFile(const string &filePath) const {
     writer.close();
 }
 
-// Returns true of database is loaded successfully
+// Returns true if database is loaded successfully
 // else return false
 
 bool PatternDatabase::fromFile(const string &filePath) {

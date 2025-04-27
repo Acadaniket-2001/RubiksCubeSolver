@@ -6,7 +6,7 @@
 #define PATTERNDATABASE_H
 
 #include "NibbleArray.h"
-#include "../RubiksCube.h"
+#include "../Models/RubiksCube.h"
 #include "bits/stdc++.h"
 
 using namespace std;
@@ -46,7 +46,6 @@ public:
     virtual void toFile(const string &filePath) const;
 
     virtual bool fromFile(const string &filePath);
-
 
 
     virtual vector<uint8_t> inflate() const;

@@ -336,11 +336,20 @@ CMakeFiles/RubiksCubeSolver.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2025.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
  C:/Program\ Files/JetBrains/CLion\ 2025.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
  C:/Program\ Files/JetBrains/CLion\ 2025.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory_resource \
- C:\1_My_Data\CP_codes\RubiksCubeSolver\IDAStarSolver.h \
- C:\1_My_Data\CP_codes\RubiksCubeSolver\IDDFSSolver.h \
- C:\1_My_Data\CP_codes\RubiksCubeSolver\DFSSolver.h \
- C:\1_My_Data\CP_codes\RubiksCubeSolver\BFSSolver.h \
- C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube3dArray.cpp \
- C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube.h \
- C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCube1dArray.cpp \
- C:\1_My_Data\CP_codes\RubiksCubeSolver\RubiksCubeBitboard.cpp
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\Solvers/IDAStarSolver.h \
+ C:/1_My_Data/CP_codes/RubiksCubeSolver/PatternDatabases/CornerPatternDatabase.h \
+ C:/1_My_Data/CP_codes/RubiksCubeSolver/PatternDatabases/PatternDatabase.h \
+ C:/1_My_Data/CP_codes/RubiksCubeSolver/PatternDatabases/NibbleArray.h \
+ C:/1_My_Data/CP_codes/RubiksCubeSolver/Models/RubiksCube.h \
+ C:/1_My_Data/CP_codes/RubiksCubeSolver/PatternDatabases/PermutationIndexer.h \
+ C:/1_My_Data/CP_codes/RubiksCubeSolver/PatternDatabases/math.h \
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\Solvers/IDDFSSolver.h \
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\Solvers/DFSSolver.h \
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\Solvers/BFSSolver.h \
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\Solvers/DFSSolver.h \
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\Models/RubiksCube3dArray.cpp \
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\Models/RubiksCube.h \
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\Models/RubiksCube1dArray.cpp \
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\Models/RubiksCubeBitboard.cpp \
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\PatternDatabases/CornerDBMaker.h \
+ C:\1_My_Data\CP_codes\RubiksCubeSolver\PatternDatabases/CornerPatternDatabase.h

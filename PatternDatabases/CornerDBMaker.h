@@ -17,7 +17,7 @@ private:
 public:
     CornerDBMaker(string fileName, uint8_t init_val);
 
-    bool bfsAndStore(int mx_depth = 7);
+    bool bfsAndStore(int mx_depth = 8);
 };
 
 #endif //DBMAKER_H

@@ -4,15 +4,15 @@ project(RubiksCubeSolver)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(RubiksCubeSolver main.cpp
-        RubiksCube.cpp
-        RubiksCube.h
-        RubiksCube3dArray.cpp
-        RubiksCube1dArray.cpp
-        RubiksCubeBitboard.cpp
-        DFSSolver.h
-        BFSSolver.h
-        IDDFSSolver.h
-        IDAStarSolver.h
+        Models/RubiksCube.cpp
+        Models/RubiksCube.h
+        Models/RubiksCube3dArray.cpp
+        Models/RubiksCube1dArray.cpp
+        Models/RubiksCubeBitboard.cpp
+        Solvers/DFSSolver.h
+        Solvers/BFSSolver.h
+        Solvers/IDDFSSolver.h
+        Solvers/IDAStarSolver.h
         PatternDatabases/NibbleArray.cpp
         PatternDatabases/NibbleArray.h
         PatternDatabases/PatternDatabase.cpp

@@ -5,37 +5,36 @@
 
 #include <bits/stdc++.h>
 
-#include "IDAStarSolver.h"
-#include "IDDFSSolver.h"
-#include "BFSSolver.h"
-#include "DFSSolver.h"
-#include "RubiksCube3dArray.cpp"
-#include "RubiksCube1dArray.cpp"
-#include "RubiksCubeBitboard.cpp"
+#include "Solvers/IDAStarSolver.h"
+#include "Solvers/IDDFSSolver.h"
+#include "Solvers/BFSSolver.h"
+#include "Solvers/DFSSolver.h"
+#include "Models/RubiksCube3dArray.cpp"
+#include "Models/RubiksCube1dArray.cpp"
+#include "Models/RubiksCubeBitboard.cpp"
+#include "PatternDatabases/CornerDBMaker.h"
 
 using namespace std;
 
 int main () {
 
-    // // Testing IDDFSSolver: ----------------------------------------------------------------------------------------------
+    // IDA* Solver Testing --------------------------------------------------------------------------
 
-    RubiksCubeBitboard obj;
-    obj.print();
+    string fileName = "C:\\1_My_Data\\CP_codes\\RubiksCubeSolver\\Databases\\CornerDB.txt";
 
-    vector<RubiksCubeBitboard::MOVE> steps = obj.randomShuffleCube(3);
-    for (auto e: steps)    cout << obj.getMove(e) << " ";
-    cout << endl;
-    obj.print();
+    // Code to create Corner Database
+    CornerDBMaker dbMaker(fileName, 0xAA);
+    // dbMaker.bfsAndStore(9);
 
-    IDAStarSolver<RubiksCubeBitboard, HashBitboard> solver(obj);
-    vector<RubiksCubeBitboard::MOVE> moves = solver.solve();
+    RubiksCubeBitboard cube;
+    auto shuffleMoves = cube.randomShuffleCube(11);
+    for (auto move: shuffleMoves) cout << cube.getMove(move) << " ";
+    cout << "\n\n";
 
-    for (const auto e: moves)    cout << obj.getMove(e) << " ";
-    cout << endl;
-    obj.print();
+    IDAStarSolver<RubiksCubeBitboard, HashBitboard> idaStarSolver(cube, fileName);
+    auto moves = idaStarSolver.solve();
 
-
-
+    for (auto move: moves) cout << cube.getMove(move) << " ";
 
 
 
@@ -58,6 +57,73 @@ int main () {
 
 
 
+
+
+
+    // // IDA* Solver Testing --------------------------------------------------------------------------
+    //
+    // string fileName = "C:\\1_My_Data\\CP_codes\\RubiksCubeSolver\\Databases\\CornerDB.txt";
+    //
+    // // Code to create Corner Database
+    // CornerDBMaker dbMaker(fileName, 0xAA);
+    // // dbMaker.bfsAndStore(9);
+    //
+    // RubiksCubeBitboard cube;
+    // auto shuffleMoves = cube.randomShuffleCube(11);
+    // cout << "Shuffling Moves: ";
+    // for (auto move: shuffleMoves) cout << cube.getMove(move) << " ";
+    // cout << "\n\n";
+    // cube.print();
+    // cout << (cube.isSolved() ? "SOLVED" : "NOT SOLVED\n") << endl;
+    //
+    // cout << "--------------------------------------\n\n";
+    //
+    // IDAStarSolver<RubiksCubeBitboard, HashBitboard> idaStarSolver(cube, fileName);
+    // auto moves = idaStarSolver.solve();
+    //
+    // cout << "Solving Moves: ";
+    // for (auto move: moves) cout << cube.getMove(move) << " ";
+    // cout << "\n\n";
+    // idaStarSolver.rubiksCube.print();
+    // cout << (idaStarSolver.rubiksCube.isSolved() ? "SOLVED" : "NOT SOLVED\n") << endl;
+    //
+    // /**  IDA* Solver Test Results:
+    //  *  ------------------------------------------------------------------------------------
+    //  *    DB_Depth             DBMakeTime                #shuffles
+    //  *  ------------------------------------------------------------------------------------
+    //  *    6                    [1-2]min.                 <= 8 (quickly)
+    //  *  ------------------------------------------------------------------------------------
+    //  *    7                    [2-3]min.                 <= 9 (quickly)
+    //  *  ------------------------------------------------------------------------------------
+    //  *    8                    ~10 min.                  <=10 (quickly),
+    //  *                                                   =11 (some shuffles take few min.)
+    //  *  ------------------------------------------------------------------------------------
+    //  *    9                    [25-30]min.               <=11 (quickly)
+    //  *  ------------------------------------------------------------------------------------
+    //  */
+
+
+
+
+    // // CornerPatternDatabase Testing ---------------------------------------------------------------------------------
+    //
+    //    CornerPatternDatabase cornerDB;
+    //    RubiksCubeBitboard cube;
+    //    cube.print();
+    //
+    //    cout << (int)cornerDB.getHeuristic(cube) << "\n";
+    //
+    //    cornerDB.setHeuristic(cube, 5);
+    //
+    //    cout << (int)cornerDB.getHeuristic(cube) << "\n";
+    //
+    //    cube.randomShuffleCube(1);
+    //    cube.print();
+    //    cout << (int)cornerDB.getHeuristic(cube) << "\n";
+    //
+    //    cornerDB.setHeuristic(cube, 6);
+    //
+    //    cout << (int)cornerDB.getHeuristic(cube) << "\n";
 
 
 
@@ -82,18 +148,18 @@ int main () {
 
 
 
-    // Testing DFSSolver: ----------------------------------------------------------------------------------------------
-
-    /*
-     * Solves within feasible time for upto depth:
-     * 6 - In 3d/1d form
-     * 7 - In BitBoard form
-     */
-
+    // // Testing DFSSolver: ----------------------------------------------------------------------------------------------
+    //
+    // /*
+    //  * Solves within feasible time for upto depth:
+    //  * 6 - In 3d/1d form
+    //  * 7 - In BitBoard form
+    //  */
+    //
     // RubiksCubeBitboard obj;
     // obj.print();
     //
-    // vector<RubiksCubeBitboard::MOVE> steps = obj.randomShuffleCube(7);
+    // vector<RubiksCubeBitboard::MOVE> steps = obj.randomShuffleCube(6);
     // for (auto e: steps)    cout << obj.getMove(e) << " ";
     // cout << endl;
     // obj.print();
@@ -108,12 +174,12 @@ int main () {
 
 
 
-    // Testing DFSSolver: ----------------------------------------------------------------------------------------------
-
-    /*
-     * Solves within feasible time for upto depth 6
-     */
-
+    // // Testing DFSSolver: ----------------------------------------------------------------------------------------------
+    //
+    // /*
+    //  * Solves within feasible time for upto depth 6
+    //  */
+    //
     // RubiksCubeBitboard obj;
     // obj.print();
     //
@@ -132,8 +198,8 @@ int main () {
 
 
 
-    // Testing custom Hashes for the RubiksCubeSolver ------------------------------------------------------------------
-
+    // // Testing custom Hashes for the RubiksCubeSolver ------------------------------------------------------------------
+    //
     // unordered_map<RubiksCube3dArray, int, Hash3d> mp;
     // RubiksCube3dArray obj1;
     // obj1.l();
@@ -169,8 +235,8 @@ int main () {
 
 
 
-    // Testing randomShuffleCube() -------------------------------------------------------------------------------------
-
+    // // Testing randomShuffleCube() -------------------------------------------------------------------------------------
+    //
     // RubiksCubeBitboard obj;
     // vector<RubiksCubeBitboard::MOVE> moves = obj.randomShuffleCube(10);
     // for (auto e : moves) {
@@ -180,8 +246,8 @@ int main () {
     // obj.print();
 
 
-    // Testing BIT-MODEL -----------------------------------------------------------------------------------------------
-
+    // // Testing BIT-MODEL -----------------------------------------------------------------------------------------------
+    //
     // RubiksCubeBitboard obj1;
     // obj1.print();
     // cout << (obj1.isSolved() ? "SOLVED" : "!SOLVED") << endl;
@@ -232,7 +298,7 @@ int main () {
 
 
     // // Testing 1D-MODEL ------------------------------------------------------------------------------------------------
-
+    //
     // RubiksCube1dArray obj;
     // obj.print();
     //

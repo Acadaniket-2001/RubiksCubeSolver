@@ -3,7 +3,7 @@
 //
 
 #include "CornerDBMaker.h"
-#include "../RubiksCubeBitboard.cpp"
+#include "../Models/RubiksCubeBitboard.cpp"
 
 using namespace std;
 
@@ -24,7 +24,7 @@ bool CornerDBMaker::bfsAndStore(int mx_depth) {
         auto node = q.front(); q.pop();
         int depth = cornerDB_.getHeuristic(node);
 
-        if (depth + 1 > mx_depth) break;
+        if (depth + 1 > min(9, mx_depth)) break;       // added a safety limit of 9 levels
 
         for (int i = 0; i < 18; i++) {
             RubiksCubeBitboard v = node;

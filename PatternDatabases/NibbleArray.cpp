@@ -4,25 +4,28 @@
 
 #include "NibbleArray.h"
 
-NibbleArray::NibbleArray(const size_t size, const uint8_t val) : size_(size / 2 + 1) {
-    arr_.resize(size_, val);
+NibbleArray::NibbleArray(const size_t size, const uint8_t val) : size_(size) {
+    arr_.resize(size_ / 2 + 1, val);
 };
 
 uint8_t NibbleArray::getVal(int idx) const {
     const int offset = idx % 2;
     idx /= 2;
+    assert(idx <= size_);
+
     const uint8_t ans = arr_[idx];
     if (offset)
-        return ((ans << static_cast<uint8_t>(4)) >> static_cast<uint8_t>(4));
-    return (ans >> static_cast<uint8_t>(4));
+        return (ans & 0x0F);
+    return (ans >> 4);
 }
 
 void NibbleArray::setVal(int idx, const uint8_t val) {
     int offset = idx % 2;
     idx /= 2;
+    assert(idx <= size_);
 
     if (offset)
-        arr_[idx] = (arr_[idx] & 0xF0) | val;
+        arr_[idx] = (arr_[idx] & 0xF0) | (val & 0x0F);
     else
         arr_[idx] = (arr_[idx] & 0x0F) | (val << 4);
 }
