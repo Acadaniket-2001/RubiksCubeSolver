@@ -337,6 +337,7 @@ CMakeFiles/RubiksCubeSolver.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2025.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
  C:/Program\ Files/JetBrains/CLion\ 2025.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory_resource \
  C:\1_My_Data\CP_codes\RubiksCubeSolver\Solvers/IDAStarSolver.h \
+ C:/1_My_Data/CP_codes/RubiksCubeSolver/Models/RubiksCube.h \
  C:/1_My_Data/CP_codes/RubiksCubeSolver/PatternDatabases/CornerPatternDatabase.h \
  C:/1_My_Data/CP_codes/RubiksCubeSolver/PatternDatabases/PatternDatabase.h \
  C:/1_My_Data/CP_codes/RubiksCubeSolver/PatternDatabases/NibbleArray.h \

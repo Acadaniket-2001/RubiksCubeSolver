@@ -2,7 +2,6 @@
 // Created by Aniket Gupta on 22-04-2025.
 //
 
-
 #include <bits/stdc++.h>
 
 #include "Solvers/IDAStarSolver.h"
@@ -23,11 +22,11 @@ int main () {
     string fileName = "C:\\1_My_Data\\CP_codes\\RubiksCubeSolver\\Databases\\CornerDB.txt";
 
     // Code to create Corner Database
-    CornerDBMaker dbMaker(fileName, 0xAA);
-    // dbMaker.bfsAndStore(9);
+    CornerDBMaker dbMaker(fileName, 0x88);
+    // dbMaker.bfsAndStore(7);
 
     RubiksCubeBitboard cube;
-    auto shuffleMoves = cube.randomShuffleCube(11);
+    auto shuffleMoves = cube.randomShuffleCube(7);
     for (auto move: shuffleMoves) cout << cube.getMove(move) << " ";
     cout << "\n\n";
 
@@ -35,8 +34,6 @@ int main () {
     auto moves = idaStarSolver.solve();
 
     for (auto move: moves) cout << cube.getMove(move) << " ";
-
-
 
 
 
