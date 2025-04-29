@@ -124,6 +124,7 @@ Rubiks-Cube-Solver/
 ├── Inputs/             # Input files for testing
 ├── Databases/          # Additional data resources
 ├── build/              # Build directory
+├── assets/             # Images and other assets
 └── Tests/              # Unit tests
 ```
 
@@ -131,7 +132,9 @@ Rubiks-Cube-Solver/
 
 ## UML Diagram
 
-The UML diagram for this project provides a visual representation of the system's structure and relationships between its components. You can view the diagram [here](https://drive.google.com/file/d/1_BJM2OdThMZySpFsE0QCIImm12JJr5Yr/view).
+The UML diagram for this project provides a visual representation of the system's structure and relationships between its components:
+
+![UML Diagram](docs/uml_diagram.jpg)
 
 ---
 
