@@ -29,6 +29,7 @@ This project implements a Rubik's Cube solver using **Korf's Algorithm**, an opt
 - [Usage](#usage)
 - [Algorithm Overview](#algorithm-overview)
 - [Project Structure](#project-structure)
+- [UML Diagram](#uml-diagram)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -65,8 +66,8 @@ This project is ideal for enthusiasts and students interested in learning about 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/rubiks-cube-solver.git
-   cd rubiks-cube-solver
+   git clone https://github.com/Acadaniket-2001/RubiksCubeSolver.git
+   cd RubiksCubeSolver
    ```
 
 2. Build the project using CMake:
@@ -125,6 +126,12 @@ Rubiks-Cube-Solver/
 ├── build/              # Build directory
 └── Tests/              # Unit tests
 ```
+
+---
+
+## UML Diagram
+
+The UML diagram for this project provides a visual representation of the system's structure and relationships between its components. You can view the diagram [here](https://drive.google.com/file/d/1_BJM2OdThMZySpFsE0QCIImm12JJr5Yr/view).
 
 ---
 
