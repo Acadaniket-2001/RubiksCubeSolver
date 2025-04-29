@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/RubiksCubeSolver.dir/Inputs/Display.cpp.obj"
+  "CMakeFiles/RubiksCubeSolver.dir/Inputs/Display.cpp.obj.d"
   "CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.obj"
   "CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube.cpp.obj.d"
   "CMakeFiles/RubiksCubeSolver.dir/Models/RubiksCube1dArray.cpp.obj"

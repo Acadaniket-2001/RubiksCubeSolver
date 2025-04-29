@@ -135,6 +135,30 @@ RubiksCubeSolver/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/build
 .PHONY : RubiksCubeSolver/fast
 
+Inputs/Display.obj: Inputs/Display.cpp.obj
+.PHONY : Inputs/Display.obj
+
+# target to build an object file
+Inputs/Display.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Inputs/Display.cpp.obj
+.PHONY : Inputs/Display.cpp.obj
+
+Inputs/Display.i: Inputs/Display.cpp.i
+.PHONY : Inputs/Display.i
+
+# target to preprocess a source file
+Inputs/Display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Inputs/Display.cpp.i
+.PHONY : Inputs/Display.cpp.i
+
+Inputs/Display.s: Inputs/Display.cpp.s
+.PHONY : Inputs/Display.s
+
+# target to generate assembly for a file
+Inputs/Display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RubiksCubeSolver.dir\build.make CMakeFiles/RubiksCubeSolver.dir/Inputs/Display.cpp.s
+.PHONY : Inputs/Display.cpp.s
+
 Models/RubiksCube.obj: Models/RubiksCube.cpp.obj
 .PHONY : Models/RubiksCube.obj
 
@@ -385,6 +409,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... RubiksCubeSolver
+	@echo ... Inputs/Display.obj
+	@echo ... Inputs/Display.i
+	@echo ... Inputs/Display.s
 	@echo ... Models/RubiksCube.obj
 	@echo ... Models/RubiksCube.i
 	@echo ... Models/RubiksCube.s
