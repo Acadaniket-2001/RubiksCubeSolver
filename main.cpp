@@ -17,77 +17,56 @@
 using namespace std;
 
 int main () {
-
-    RubiksCubeBitboard cube;
-
-    Display display;
-    display.displayMoves();
-    vector<int> shuffles = display.inputMoves(7);
-
-    cout << "Entered Shuffling Moves: " << endl;
-    for (auto e: shuffles) {
-        cout << cube.getMove(RubiksCubeBitboard::MOVE(e)) << " ";
-        cube.move(RubiksCubeBitboard::MOVE(e));
-    }
-    cout << "\n\n";
-    cube.print();
-    cout << "----------------------------------\n\n";
-
-
-    string fileName = "C:\\1_My_Data\\CP_codes\\RubiksCubeSolver\\Databases\\CornerDB.txt";
-
-    // Code to create Corner Database
-    CornerDBMaker dbMaker(fileName, 0x88);
-    // dbMaker.bfsAndStore(7);
-
-    IDAStarSolver<RubiksCubeBitboard, HashBitboard> idaStarSolver(cube, fileName);
-    auto moves = idaStarSolver.solve();
-
-    cout << "Solver moves: " << endl;
-    for (auto move: moves) cout << cube.getMove(move) << " ", cube.move(move);
-    cout << "\n\n";
-    cube.print();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // // IDA* Solver Testing --------------------------------------------------------------------------
+    //
+    // RubiksCubeBitboard cube;
+    //
+    // Display display;
+    // display.displayMoves();
+    // vector<int> shuffles = display.inputMoves(9);
+    //
+    // cout << "Entered Shuffling Moves: " << endl;
+    // for (auto e: shuffles) {
+    //     cout << cube.getMove(RubiksCubeBitboard::MOVE(e)) << " ";
+    //     cube.move(RubiksCubeBitboard::MOVE(e));
+    // }
+    // cout << "\n\n";
+    // cube.print();
+    // cout << "----------------------------------\n\n";
+    //
     //
     // string fileName = "C:\\1_My_Data\\CP_codes\\RubiksCubeSolver\\Databases\\CornerDB.txt";
     //
     // // Code to create Corner Database
-    // CornerDBMaker dbMaker(fileName, 0x88);
-    // // dbMaker.bfsAndStore(7);
-    //
-    // RubiksCubeBitboard cube;
-    // auto shuffleMoves = cube.randomShuffleCube(7);
-    // for (auto move: shuffleMoves) cout << cube.getMove(move) << " ";
-    // cout << "\n\n";
+    // CornerDBMaker dbMaker(fileName, 0xAA);
+    // // dbMaker.bfsAndStore(9);
     //
     // IDAStarSolver<RubiksCubeBitboard, HashBitboard> idaStarSolver(cube, fileName);
     // auto moves = idaStarSolver.solve();
     //
-    // for (auto move: moves) cout << cube.getMove(move) << " ";
+    // cout << "Solver moves: " << endl;
+    // for (auto move: moves) cout << cube.getMove(move) << " ", cube.move(move);
+    // cout << "\n\n";
+    // cube.print();
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //
     // // IDA* Solver Testing --------------------------------------------------------------------------
     //
     // string fileName = "C:\\1_My_Data\\CP_codes\\RubiksCubeSolver\\Databases\\CornerDB.txt";
@@ -97,38 +76,59 @@ int main () {
     // // dbMaker.bfsAndStore(9);
     //
     // RubiksCubeBitboard cube;
-    // auto shuffleMoves = cube.randomShuffleCube(11);
-    // cout << "Shuffling Moves: ";
+    // auto shuffleMoves = cube.randomShuffleCube(9);
     // for (auto move: shuffleMoves) cout << cube.getMove(move) << " ";
     // cout << "\n\n";
-    // cube.print();
-    // cout << (cube.isSolved() ? "SOLVED" : "NOT SOLVED\n") << endl;
-    //
-    // cout << "--------------------------------------\n\n";
     //
     // IDAStarSolver<RubiksCubeBitboard, HashBitboard> idaStarSolver(cube, fileName);
     // auto moves = idaStarSolver.solve();
     //
-    // cout << "Solving Moves: ";
     // for (auto move: moves) cout << cube.getMove(move) << " ";
-    // cout << "\n\n";
-    // idaStarSolver.rubiksCube.print();
-    // cout << (idaStarSolver.rubiksCube.isSolved() ? "SOLVED" : "NOT SOLVED\n") << endl;
-    //
-    // /**  IDA* Solver Test Results:
-    //  *  ------------------------------------------------------------------------------------
-    //  *    DB_Depth             DBMakeTime                #shuffles
-    //  *  ------------------------------------------------------------------------------------
-    //  *    6                    [1-2]min.                 <= 8 (quickly)
-    //  *  ------------------------------------------------------------------------------------
-    //  *    7                    [2-3]min.                 <= 9 (quickly)
-    //  *  ------------------------------------------------------------------------------------
-    //  *    8                    ~10 min.                  <=10 (quickly),
-    //  *                                                   =11 (some shuffles take few min.)
-    //  *  ------------------------------------------------------------------------------------
-    //  *    9                    [25-30]min.               <=11 (quickly)
-    //  *  ------------------------------------------------------------------------------------
-    //  */
+
+
+
+
+    // IDA* Solver Testing --------------------------------------------------------------------------
+
+    string fileName = "C:\\1_My_Data\\CP_codes\\RubiksCubeSolver\\Databases\\CornerDB.txt";
+
+    // Code to create Corner Database
+    CornerDBMaker dbMaker(fileName, 0xAA);
+    // dbMaker.bfsAndStore(9);
+
+    RubiksCubeBitboard cube;
+    auto shuffleMoves = cube.randomShuffleCube(11);
+    cout << "Shuffling Moves: ";
+    for (auto move: shuffleMoves) cout << cube.getMove(move) << " ";
+    cout << "\n\n";
+    cube.print();
+    cout << (cube.isSolved() ? "SOLVED" : "NOT SOLVED\n") << endl;
+
+    cout << "--------------------------------------\n\n";
+
+    IDAStarSolver<RubiksCubeBitboard, HashBitboard> idaStarSolver(cube, fileName);
+    auto moves = idaStarSolver.solve();
+
+    cout << "Solving Moves: ";
+    for (auto move: moves) cout << cube.getMove(move) << " ";
+    cout << "\n\n";
+    idaStarSolver.rubiksCube.print();
+    cout << (idaStarSolver.rubiksCube.isSolved() ? "SOLVED" : "NOT SOLVED\n") << endl;
+
+    /**  IDA* Solver Test Results:
+     *  ------------------------------------------------------------------------------------
+     *    DB_Depth             DBMakeTime                #shuffles
+     *  ------------------------------------------------------------------------------------
+     *    6                    [1-2]min.                 <= 8 (quickly)
+     *  ------------------------------------------------------------------------------------
+     *    7                    [2-3]min.                 <= 9 (quickly)
+     *  ------------------------------------------------------------------------------------
+     *    8                    ~10 min.                  <=10 (quickly),
+     *                                                   =11 (some shuffles take few min.)
+     *  ------------------------------------------------------------------------------------
+     *    9                    [25-30]min.               <=11 (quickly)
+     *  ------------------------------------------------------------------------------------
+     */
 
 
 
@@ -172,11 +172,11 @@ int main () {
     // for (const auto e: moves)    cout << obj.getMove(e) << " ";
     // cout << endl;
     // obj.print();
+    //
 
 
 
-
-    // // Testing DFSSolver: ----------------------------------------------------------------------------------------------
+    // // Testing BFSSolver: ----------------------------------------------------------------------------------------------
     //
     // /*
     //  * Solves within feasible time for upto depth:

@@ -1,5 +1,7 @@
 # Rubik's Cube Solver
 
+[Watch the Demo](https://www.youtube.com/watch?v=8mRLhPXGnmM)
+
 This project implements a Rubik's Cube solver using **Korf's Algorithm**, an optimal solution method for solving the cube in the minimum number of moves. The solver is designed to explore and demonstrate advanced search techniques and heuristics in solving the Rubik's Cube.
 
 ---
